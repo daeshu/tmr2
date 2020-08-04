@@ -1,0 +1,7 @@
+body#layout #mywrapper {
+    width: 60%;
+    }
+    body#layout #post-wrapper {
+    width: 60%;
+    float: left;
+    }
