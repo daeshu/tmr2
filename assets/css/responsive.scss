@@ -1,0 +1,354 @@
+$media: screen;
+$feature_min: min-width;
+$feature_max: max-width;
+$value_one: 576px;
+$value_two: 667px;
+$value_three: 767px;
+$value_four: 768px;
+$value_five: 991px;
+$value_six: 992px;
+$value_seven: 1199px;
+
+$main-color: #10bc83;
+$gradient-color: linear-gradient(to bottom, #10bc83, #12C98C, #13D191, #13DF9A, #14EBA2);
+$black-color: #000000;
+$white-color: #ffffff;
+
+@media only #{$media} and ($feature_max : $value_three) {
+
+    .btn {
+        padding: 14px 20px 13px;
+        font-size: 13px;
+    }
+
+    .coming-soon-content {
+        #timer {
+            margin-bottom: 15px;
+
+            div {
+                font-size: 35px;
+                margin: {
+                    left: 10px;
+                    right: 10px;
+                }
+                span {
+                    font-size: 14.5px;
+                    margin-top: -5px;
+                }
+                &::before {
+                    display: none;
+                }
+            }
+        }
+        h1 {
+            font-size: 55px;
+            line-height: 1.1;
+        }
+        p {
+            font-size: 13px;
+            margin-top: 25px;
+        }
+        .btn-box {
+            .btn {
+                margin: 0 2px;
+            }
+        }
+    }
+
+    .sidebar-modal {
+        .sidebar-modal-inner {
+            width: 100%;
+            padding: 30px;
+
+            .close-btn {
+                right: 20px;
+                top: 14px;
+                font-size: 20px;
+            }
+        }
+        .about-area {
+            margin-bottom: 30px;
+
+            .title {
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 13px;
+                    margin-top: 10px;
+                    line-height: 1.8;
+                }
+            }
+        }
+        .contact-area {
+            .title {
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 20px;
+                }
+            }
+            .contact-form {
+                max-width: 100%;
+            }
+            .contact-info {
+                margin-top: 35px;
+
+                .contact-info-content {
+                    h3 {
+                        font-size: 17px;
+                        line-height: 1.4;
+                    }
+                    h2 {
+                        font-size: 22px;
+
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .subscribe-modal {
+        .subscribe-modal-inner {
+            max-width: 100%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+            overflow-y: scroll;
+            transform: scale(0.7) translateY(0);
+            padding: {
+                top: 40px;
+                bottom: 40px;
+                left: 15px;
+                right: 15px;
+            }
+            h2 {
+                font-size: 18px;
+                margin-top: 25px;
+            }
+            p {
+                max-width: 100%;
+                line-height: 1.8;
+                margin-top: 10px;
+                font-size: 13px;
+            }
+            .close-btn {
+                right: 15px;
+                top: 15px;
+                font-size: 20px;
+                color: $black-color;
+            }
+            .newsletter-header {
+                .animation-icons {
+                    display: none;
+                }
+                img {
+                    width: 100px;
+                }
+            }
+            form {
+                max-width: 100%;
+                border-radius: 0;
+                margin-top: 30px;
+                box-shadow: unset;
+
+                .input-newsletter {
+                    box-shadow: 0 5px 28.5px 1.5px rgba(149, 152, 200, 0.2);
+                }
+                button {
+                    position: relative;
+                    margin-top: 15px;
+                    height: auto;
+                    border-radius: 30px;
+                    font-size: 15px;
+                    box-shadow: 0 5px 28.5px 1.5px rgba(149, 152, 200, 0.2);
+                    padding: {
+                        left: 25px;
+                        right: 25px;
+                        top: 11px;
+                        bottom: 11px;
+                    }
+                }
+                #validator-newsletter {
+                    bottom: -30px;
+                    font-size: 13px;
+                }
+            }
+        }
+        .subscribe-modal-content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: {
+                left: 15px;
+                right: 15px;
+            }
+        }
+        &.active {
+            .subscribe-modal-inner {
+                transform: scale(1) translateY(0);
+            }
+        }
+    }
+
+}
+
+@media only #{$media} and ($feature_min : $value_two) and ($feature_max : $value_three) {
+
+    .coming-soon-area {
+        height: 100%;
+        padding: {
+            top: 120px;
+            bottom: 200px;
+        }
+    }
+    .coming-soon-content {
+        margin-top: 0;
+    }
+
+}
+
+@media only #{$media} and ($feature_min : $value_one) and ($feature_max : $value_three) {
+
+    .coming-soon-content {
+        margin-top: 0;
+
+        #timer {
+            margin-bottom: 10px;
+
+            div {
+                font-size: 35px;
+                margin: {
+                    left: 25px;
+                    right: 25px;
+                }
+                span {
+                    font-size: 14.5px;
+                    margin-top: -5px;
+                }
+                &::before {
+                    display: block;
+                    right: -32px;
+                    top: -4px;
+                    font-size: 40px;
+                }
+            }
+        }
+        h1 {
+            font-size: 60px;
+            line-height: 1.1;
+        }
+        p {
+            font-size: 13.5px;
+        }
+    }
+
+    .subscribe-modal {
+        .subscribe-modal-content {
+            padding: {
+                left: 40px;
+                right: 40px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .close-btn {
+                right: 30px;
+            }
+        }
+    }
+
+}
+
+@media only #{$media} and ($feature_min : $value_four) and ($feature_max : $value_five) {
+
+    .coming-soon-content {
+        h1 {
+            font-size: 80px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-top: 20px;
+        }
+        #timer {
+            div {
+                font-size: 55px;
+                margin: {
+                    left: 30px;
+                    right: 30px;
+                }
+                span {
+                    font-size: 16px;
+                    margin-top: -8px;
+                }
+                &::before {
+                    right: -40px;
+                    top: -8px;
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+
+    .sidebar-modal {
+        .sidebar-modal-inner {
+            width: 85%;
+            padding: {
+                top: 40px;
+                bottom: 40px;
+                left: 40px;
+                right: 40px;
+            }
+        }
+        .about-area {
+            .title {
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+        .contact-area {
+            .title {
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .subscribe-modal {
+        .subscribe-modal-inner {
+            h2 {
+                font-size: 25px;
+            }
+            .close-btn {
+                right: 25px;
+                top: 20px;
+                font-size: 25px;
+                color: $black-color;
+            }
+        }
+    }
+    
+}
+
+@media only #{$media} and ($feature_min : $value_six) and ($feature_max : $value_seven) {
+
+    .sidebar-modal {
+        .sidebar-modal-inner {
+            width: 60%;
+        }
+    }
+
+}
