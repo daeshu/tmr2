@@ -4,14 +4,14 @@ $errorMSG = "";
 
 // NAME
 if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "Se requiere un nombre ";
 } else {
     $name = $_POST["name"];
 }
 
 // EMAIL
 if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
+    $errorMSG .= "Se requiere un email ";
 } else {
     $email = $_POST["email"];
 }
@@ -19,7 +19,7 @@ if (empty($_POST["email"])) {
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
+    $errorMSG .= "Requerido un mensaje ";
 } else {
     $message = $_POST["message"];
 }
@@ -46,10 +46,10 @@ $success = mail($EmailTo, $Subject, $Body);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
-   echo "success";
+   echo "Enviado";
 }else{
     if($errorMSG == ""){
-        echo "Something went wrong :(";
+        echo "Algo salió mal :(";
     } else {
         echo $errorMSG;
     }
