@@ -99,7 +99,7 @@
                         <h2>Contacto</h2>
                     </div>
                     <div class="contact-form">
-                        <form id="contactForm" action="https://smartforms.dev/submit/600f87a3b81854118fd407bd" method="POST">
+                        <form id="contactForm" action="https://smartforms.dev/submit/600f87a3b81854118fd407bd" method="POST" enctype="multipart/form-data" >
                             <div class="form-group">
                             <input type="text" name="name" id="name" class="form-control" required data-error="Escribe tu nombre" placeholder="Nombre">
                             <div class="help-block with-errors"></div>
@@ -112,6 +112,9 @@
                             <textarea name="message" class="form-control" id="message" cols="30" rows="5" required data-error="Escribe un mensaje" placeholder="Mensaje"></textarea>
                             <div class="help-block with-errors"></div>
                             </div>
+                            
+                            <input type="file" name="file">
+                            <input type="file" name="document">
 
                         <button type="submit" value="send" >Enviar</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
